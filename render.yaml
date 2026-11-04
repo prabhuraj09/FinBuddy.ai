@@ -1,0 +1,24 @@
+# Render deployment configuration for FinBuddy AI Backend
+# https://render.com/docs/blueprint-spec
+
+services:
+  - type: web
+    name: finbuddy-api
+    runtime: node
+    plan: free
+    region: singapore          # closest to India
+    branch: main
+    rootDir: server
+    buildCommand: npm install
+    startCommand: npm start
+    healthCheckPath: /api/health
+    envVars:
+      - key: NODE_ENV
+        value: production
+      - key: PORT
+        value: 10000
+      - key: GEMINI_API_KEY
+        sync: false            # Set manually in Render dashboard → Environment
+      - key: CLIENT_URL
+        sync: false            # e.g. https://finbuddy.vercel.app
+

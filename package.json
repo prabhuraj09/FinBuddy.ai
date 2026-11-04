@@ -1,0 +1,26 @@
+{
+  "name": "finbuddy-ai",
+  "version": "1.0.0",
+  "description": "FinBuddy AI - An AI-powered financial chatbot for budgeting, savings, loans, investments, and financial planning.",
+  "scripts": {
+    "dev:server": "npm --prefix server run dev",
+    "dev:client": "npm --prefix client run dev",
+    "start:server": "npm --prefix server start",
+    "build:client": "npm --prefix client run build",
+    "test:server": "npm --prefix server test"
+  },
+  "keywords": [
+    "fintech",
+    "financial-advisor",
+    "chatbot",
+    "gemini",
+    "react",
+    "vite",
+    "tailwind",
+    "express",
+    "sqlite"
+  ],
+  "author": "",
+  "license": "MIT"
+}
+
